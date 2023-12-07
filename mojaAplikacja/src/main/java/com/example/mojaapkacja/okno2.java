@@ -1,3 +1,5 @@
+// aSzymon - gtihub
+
 package com.example.mojaapkacja;
 
 import android.os.Bundle;
