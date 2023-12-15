@@ -1,3 +1,5 @@
+// aSzymon - github
+
 package com.example.mojaapkacja;
 
 import android.annotation.SuppressLint;
