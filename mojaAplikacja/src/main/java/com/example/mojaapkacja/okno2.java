@@ -1,11 +1,15 @@
 package com.example.mojaapkacja;
 
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,6 +28,8 @@ public class okno2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.okno_2);
+
+        oknoPobieranieWartosci();
 
         pole1 = findViewById(R.id.pole1_okno2);
         pole2 = findViewById(R.id.pole2_okno2);
@@ -84,13 +90,55 @@ public class okno2 extends AppCompatActivity {
 
     private String mnozenieLiczb(){
 
-        return String.valueOf(Integer.valueOf(String.valueOf(pole1.getText()))*Integer.valueOf(String.valueOf(pole2.getText())));
+        return String.valueOf(Double.valueOf(String.valueOf(pole1.getText()))*Double.valueOf(String.valueOf(pole2.getText())));
 
     }
 
     private String dzielenieLiczb(){
 
-        return String.valueOf(Integer.valueOf(String.valueOf(pole1.getText()))/Integer.valueOf(String.valueOf(pole2.getText())));
+        return String.valueOf(Double.valueOf(String.valueOf(pole1.getText()))/Double.valueOf(String.valueOf(pole2.getText())));
 
     }
+
+    public void oknoPobieranieWartosci(){
+
+        ProgressDialog pobieranieWartosci = new ProgressDialog(this);
+        pobieranieWartosci.setCancelable(false);
+        pobieranieWartosci.setIcon(R.mipmap.ic_launcher);
+        pobieranieWartosci.setTitle("Pobieranie danych...");
+        pobieranieWartosci.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        pobieranieWartosci.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getBaseContext(),"Kliknięto OK",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+        pobieranieWartosci.setButton(DialogInterface.BUTTON_NEGATIVE,
+                "Anuluj",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which)
+                    {
+                        Toast.makeText(getBaseContext(),
+                                "Kliknięto Anuluj",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+        pobieranieWartosci.show();
+        new Thread(new Runnable(){
+            public void run(){
+                for (int i=1; i<=10; i++) {
+                    try {
+                        Thread.sleep(1500);
+                        pobieranieWartosci.incrementProgressBy(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                pobieranieWartosci.dismiss();
+            }
+        }).start();
+    }
+
 }

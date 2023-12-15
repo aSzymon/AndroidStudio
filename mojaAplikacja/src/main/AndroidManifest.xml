@@ -28,6 +28,8 @@
 
         </activity>
 
+        <activity android:name=".okno3" android:exported="true"></activity>
+
     </application>
 
 </manifest>
