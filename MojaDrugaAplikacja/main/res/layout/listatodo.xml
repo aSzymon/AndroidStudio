@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E8CA6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pole_listaToDo"
+            android:layout_width="285dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#09172C"
+            android:ems="10"
+            android:hint="Dodaj element"
+            android:inputType="text"
+            android:textColor="#09172C"
+            android:textColorHint="#31364A" />
+
+        <Button
+            android:id="@+id/przycisk_listaToDo"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_weight="1"
+            android:backgroundTint="#415B8F"
+            android:text="DODAJ"
+            android:textColor="#0C1A42"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_listaToDo"
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:divider="#0E153A"
+        android:dividerHeight="1dp" />
+</LinearLayout>

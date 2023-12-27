@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="678dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="#F7F1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
+
+        <TextView
+            android:id="@+id/tytul_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="588dp"
+            android:text="FORMULARZ"
+            android:textColor="#544868"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/poleNick_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Podaj nick"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#575757"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.165" />
+
+        <EditText
+            android:id="@+id/poleHaslo_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Podaj hasło"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#575757"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262" />
+
+        <EditText
+            android:id="@+id/poleHasloPowtorz_fomularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Powtórz hasło"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#575757"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358" />
+
+        <Switch
+            android:id="@+id/czyPelnoletni_formularz"
+            android:layout_width="352dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:text="Czy masz ukończone 18 lat?"
+            android:textAlignment="center"
+            android:textColor="#544868"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.463" />
+
+        <CheckBox
+            android:id="@+id/kobieta_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kobieta"
+            android:textColor="#544868"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.641" />
+
+        <CheckBox
+            android:id="@+id/mezczyzna_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mężczyzna"
+            android:textColor="#544868"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.717" />
+
+        <CheckBox
+            android:id="@+id/inne_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inna"
+            android:textColor="#544868"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.793" />
+
+        <TextView
+            android:id="@+id/tekst1_formularz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podaj swoją płeć"
+            android:textSize="24sp"
+            android:textColor="#544868"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.557" />
+
+        <ImageButton
+            android:id="@+id/info1_formularz"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.165"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        <ImageButton
+            android:id="@+id/info2_formularz"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        <ImageButton
+            android:id="@+id/info3_formularz"
+            android:layout_width="45dp"
+            android:background="#00FFFFFF"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        <Button
+            android:id="@+id/zatwierdz_formularz"
+            android:layout_width="136dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#BA85FB"
+            android:text="ZATWIERDŹ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.789" />
+
+        <TextView
+            android:id="@+id/podsumowanie_formularz"
+            android:layout_width="346dp"
+            android:layout_height="101dp"
+            android:textColor="#544868"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.972" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

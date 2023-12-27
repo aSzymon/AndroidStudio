@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABABA">
+
+    <TextView
+        android:id="@+id/tytul_stronaGlowna"
+        android:layout_width="263dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="656dp"
+        android:text="STRONA GŁOWNA"
+        android:textAlignment="center"
+        android:textColor="#686868"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tytul_stronaGlowna"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tytul_stronaGlowna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="664dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tytul_stronaGlowna"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/przyciskProstyKalkulator_oknoGlowne"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#9776BD"
+            android:text="PROSTY KALKULATOR"
+            android:textColor="@color/white"
+            tools:textStyle="bold" />
+
+        <Button
+            android:id="@+id/przyciskAkaMemory_oknoGlowne"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#769EBD"
+            android:text="AKA MEMORY"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/przyciskFormularz_oknoGlowne"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#7DBD76"
+            android:text="FORMULARZ"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/przyciskMiniWikipedia_oknoGlowne"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#BBBD76"
+            android:text="MINI WIKIPEDIA"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/przyciskListaToDo_oknoGlowne"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#BD9276"
+            android:text="LISTA TO DO"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
